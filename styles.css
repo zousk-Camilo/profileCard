@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Darkcyan);
+    font-size: 18px;
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: right 51vw bottom 20vh, left 44vw top 48vh;
+}
+
+.contenedorTarjetas{
+    margin: 170px auto 60px;
+    width: 340px;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.burbuja{
+    background: url(bg-pattern-card.svg);
+    height: 142px;
+}
+
+.foto {
+    position: absolute;
+    top: 88px;
+    left: 35%;
+    border:5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 95px;
+}
+
+.datosPersonales{
+    background-color:white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.name{
+    font-size: 18px;
+    color: var(--Verydarkdesaturatedblue);
+    font-weight: 700;
+}
+.age {
+    color: var(--Darkgray);
+}
+
+.ciudad{
+    color: var(--Darkgray);
+    font-size: 0.80em;
+    margin-top: 8px;
+
+}
+.estadisticasContenedor{
+    background-color: white;
+    border-top: 1px solid var(--Darkgray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+} 
+.estadisticas{
+    text-align: center;
+}
+.cantidad{
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--Verydarkdesaturatedblue);
+}
+.unidadMedida{
+    font-size: 0.6em;
+    color: var(--Darkgray);
+    letter-spacing: 2px;
+}
+
+
+/******************************Footer************************/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(240, 11%, 4%); }
+
+/**********1440px**************/
+
+@media only screen and (min-width :1440px){
+.contenedorTarjetas{
+    width: 350px;
+}
+
+}
